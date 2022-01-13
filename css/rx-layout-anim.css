@@ -1,0 +1,9 @@
+.rx-an-fa {
+  opacity: 0 !important;
+  transform: translateY(25px) !important;
+  transition: opacity 1200ms, transform 500ms;
+}
+.rx-an-fa.rx-an-fa-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}

@@ -3,10 +3,6 @@ var scrollAnim = document.querySelectorAll(".rx-an-fa");
 function scrollPosition() {
   if (scrollAnim.length > 0) {
     let scrollAnimLength;
-    let scrollAnimPositionTop =
-      document.documentElement.scrollTop - window.innerHeight * 0.65;
-    let scrollAnimPositionBottom =
-      document.documentElement.scrollTop + window.innerHeight * 0.65;
     for (
       scrollAnimLength = 0;
       scrollAnimLength < scrollAnim.length;
@@ -14,7 +10,7 @@ function scrollPosition() {
     ) {
       if (
         scrollAnim[scrollAnimLength].getBoundingClientRect().top <
-        document.documentElement.scrollTop
+        window.innerHeight * 0.8
       ) {
         scrollAnim[scrollAnimLength].classList.add("rx-an-fa-in");
       }
